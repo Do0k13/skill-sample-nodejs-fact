@@ -1,0 +1,135 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "noticias recientes",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FallbackIntent",
+                    "slots": [],
+                    "samples": [
+                        "No entiendo lo que buscas"
+                    ]
+                },
+                {
+                    "name": "GetNewFactIntent",
+                    "slots": [
+                        {
+                            "name": "tiempo",
+                            "type": "timeType"
+                        }
+                    ],
+                    "samples": [
+                        "una noticia",
+                        "una noticia {tiempo}",
+                        "dime una noticia",
+                        "dime una noticia {tiempo}",
+                        "dame una noticia",
+                        "dame una noticia {tiempo}",
+                        "dame algo de noticias",
+                        "cuentame algo {tiempo}",
+                        "cuenta algo {tiempo}",
+                        "dime algo {tiempo}",
+                        "cuentame algo",
+                        "cuenta algo"
+                    ]
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "timeType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "reciente",
+                                "synonyms": [
+                                    "nuevo",
+                                    "actual"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "de este mes",
+                                "synonyms": [
+                                    "del mes"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "de esta semana",
+                                "synonyms": [
+                                    "de la semana"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "de hoy",
+                                "synonyms": [
+                                    "del día"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
