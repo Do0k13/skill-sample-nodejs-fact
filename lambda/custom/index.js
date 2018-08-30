@@ -71,32 +71,32 @@ const ErrorHandler = {
     console.log(`Error handled: ${error.message}`);
 
     return handlerInput.responseBuilder
-      .speak('Sorry, an error occurred.')
-      .reprompt('Sorry, an error occurred.')
+      .speak('Lo siento, ha ocurrido un error.')
+      .reprompt('Lo siento, ha ocurrido un error.')
       .getResponse();
   },
 };
 
-const SKILL_NAME = 'Blockchain Facts';
-const GET_FACT_MESSAGE = 'Here\'s your fact: ';
-const HELP_MESSAGE = 'You can say tell me a blockchain fact, or, you can say exit... What can I help you with?';
-const HELP_REPROMPT = 'What can I help you with?';
-const STOP_MESSAGE = 'Goodbye!';
+const SKILL_NAME = 'Datos Blockchain';
+const GET_FACT_MESSAGE = 'Aquí está un dato: ';
+const HELP_MESSAGE = 'Puedes decir dime un dato blockchain,o puedes decir salir... ¿Cómo puedo ayudarte?';
+const HELP_REPROMPT = '¿Cómo puedo ayudarte?';
+const STOP_MESSAGE = '¡Adiós!';
 
 const data = [
-  'Blockchains can be public or private.',
-  'In terms of its development, blockchain is where the internet was many years ago.',
-  'Only one percent of the world’s population is using blockchain today.',
-  'There is significant investment by today’s tech giants such as IBM and Microsoft in blockchain technology.',
-  'Over the last five years, venture capitals have invested more than one billion into blockchain companies.',
-  'The global blockchain market is expected to be worth twenty billion .',
-  'Blockchains are highly transparent, because anyone with access to a blockchain can view the entire chains.',
-  'Similar to a Google doc, all participants within a network see all changes to the ledger.',
-  'The ledger is constantly updated and each participant has their own copy of it.',
-  'A blockchain is most vulnerable to a breach when it first come online.',
-  'Nine out of ten agree that blockchain will disrupt the banking and financial industry.',
-  'One-third of C-level executives are considering adopting or are using blockchain technology.',
-  'Just like with the internet, there will be jobs that become obsoleter.',
+  'Las blockchain pueden ser públicas o privadas.',
+  'En términos de su desarrollo, blockchain es dónde el internet estaba hace 20 años.',
+  'Sólo uno por ciento de la población mundial está usando blockchain ahora.',
+  'Hay inversiones considerables por los actuales gigantes tecnológicos cómo IBM y Microsoft en la tecnología blockchain.',
+  'Durante los últimos 5 años, capitales de riesgo han invertido más de un billón de dólares en compañías blockchain.',
+  'El mercado global de blockchain se espera que esté valuado en 20 billones de dólares.',
+  'Blockchain es altamente transparente, debido a que cualquiera con acceso a una blockchain puede ver el historial completo de transacciones.',
+  'Similar a Google docs, todos los participantes dentro de la red pueden ver los cambios en los registros.',
+  'El libro contable es constantemente actualizado y cada participante tiene su propia copia de éste.',
+  'Una blockchain es más vulnerable a una brecha de seguridad cuando sale por primera vez en línea.',
+  'Nueve de diez personas están de acuerdo que blockchain va a ser disruptiva en la industria financiera y en la banca.',
+  'Un tercio de ejecutivos de nivel C están considerando adoptar o ya están usando tecnología blockchain.',
+  'Justo cómo el internet, habrá trabajos que llegarán a ser obsoletos.',
 ];
 
 const skillBuilder = Alexa.SkillBuilders.standard();
