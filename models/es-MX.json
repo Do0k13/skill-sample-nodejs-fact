@@ -17,12 +17,17 @@
                 },
                 {
                     "name": "FallbackIntent",
+                    "slots": [],
                     "samples": []
                 },
                 {
                     "name": "GetNewFactIntent",
                     "slots": [],
                     "samples": [
+                        "dame un dato sobre blockchain",
+                        "hablame sobre blockchain",
+                        "qué es blockchain",
+                        "dime qué es blockchain",
                         "dime un dato de blockchain",
                         "un dato blockchain",
                         "cuéntame sobre blockchain",
